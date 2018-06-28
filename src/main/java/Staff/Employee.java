@@ -1,4 +1,6 @@
-public class Employee {
+package Staff;
+
+public abstract class Employee {
 
     private String name;
     private String niNumber;
