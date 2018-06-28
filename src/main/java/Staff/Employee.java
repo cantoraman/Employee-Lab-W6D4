@@ -40,7 +40,7 @@ public abstract class Employee {
         salary += increment;
     }
 
-    public double payBonus(){
-        return 0.01 * salary;
+    public int payBonus(){
+        return salary/100;
     }
 }
