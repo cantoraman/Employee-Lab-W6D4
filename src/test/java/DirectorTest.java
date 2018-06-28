@@ -38,13 +38,20 @@ public class DirectorTest {
     }
 
     @Test
+    public void raiseMustNotBeNegative(){
+        director.raiseSalary(-200);
+        assertEquals(10000,director.getSalary());
+    }
+
+    @Test
     public void canPayBonus(){
-        assertEquals(100, director.payBonus());
+        assertEquals(200, director.payBonus());
     }
     @Test
     public void hasBudget(){
         assertEquals(100000, director.getBudget());
     }
+
 
 
 }

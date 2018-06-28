@@ -37,7 +37,10 @@ public abstract class Employee {
     }
 
     public void raiseSalary(int increment){
-        salary += increment;
+//        if (increment >= 0);
+//        salary += increment;
+
+        salary = (increment>=0) ? salary+increment : salary;
     }
 
     public int payBonus(){
